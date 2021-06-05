@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> QUARANTEAMS </title>
+        <link href="daily cases.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <div class="container">
+        <div class="navbar">
+            <img src="data:image/png;base64,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" class="logo">
+            <nav>
+                <div class="nav-links">
+                <ul>
+                    <li> <a href="#DAILY CASES"> DAILY CASES AND VACCINES</a></li>
+                    <li> <a href="./home quarantine.html"> HOME QUARANTINE </a></li>
+                    <li> <a href="./hospital.html"> NEARBY HOSPITALS & OXYGEN CENTERS</a></li>
+                    <li><a href="./feedbackeg.html"> FEEDBACK FORM</a></li>
+                </ul>
+                </div>
+            </nav>
+            
+        </div>
+    
+        <div class="content">
+                <h1> QUARANTEAMS</h1>
+                <h4 style="font-size: larger;">LETS FIGHT AGAINST CORONA </h4>
+                <a href="#CONTACT US" class="hero-btn"> CONTACT US </a>
+        </div>
+    </div>
+    <section class="corona">
+    
+        <h1> WHAT IS CORONA VIRUS? </h1>
+<p> Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+
+Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+
+The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. 
+
+The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
+<h1 id="DAILY CASES"> DAILY CASES</h1>
+<div class="row">
+
+    
+    <div class="corona-col">
+        <h3> TAMILNADU CASES </h3>
+        <p>NEW CASES: 22651 <br/> TOTAL CASES: 2195402</p>
+    </div>
+    <div class="corona-col">
+        <h3> INDIA CASES </h3>
+        <p>NEW CASES: 120332 <br/> TOTAL CASES: 28693835 </p>
+    </div>
+    <div class="corona-col">
+        <h3> RECOVERED CASES </h3>
+        <p> TAMILNADU RECOVERED CASES: 1900306 <br/> INDIA RECOVERED CASES: 26787130 </p>
+    </div>
+</div>
+</section>
+<section class="vaccines">
+    <h1> VACCINES </h1>
+    <P> A vaccine is a substance that resembles the disease-causing agent (called pathogen, the coronavirus in this case) that trains the body’s immune system and creates a ‘memory’. When the pathogen infects in future, this memory is rapidly deployed to destroy it and prevent disease.<br/>
+        <br/>
+
+
+        Evidence shows that incidence of an infectious disease goes down rapidly following the deployment of vaccines against it; several human diseases are now vaccine preventable. Besides the eradication of smallpox and near eradication of polio, vaccines have resulted in the prevention of over 20 other life-threatening diseases, avoiding an estimated 2-3 million deaths annually. India’s Universal Immunization Programme, among the world’s largest, immunizes about 26 million children every year. It is estimated that every dollar spent on childhood vaccines adds $44 to the economy by ensuring that children grow up to be healthy adults.<br/>
+        <br/> <br/>
+        <div class="row">
+            <div class="vaccines-col">
+              <img src="data:image/jpeg;base64,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" alt="VACCINES"  align="center">
+              <div class="layer">
+          <h3>VACCINES</h3>
+      </div>
+      </div>
+      </div>
+      <div class="rows">
+      <div class="vaccination">
+             <b>Vaccines take long to develop. How could the Covid-19 vaccines be ready so soon?</b><br/><br/><br/>
+        It can indeed take several years to develop a vaccine. After a proof of concept has been established in research laboratories, controlled manufacturing processes are developed to make stable and highly pure products that are tested on animals and then on humans for safety and effectiveness. Clinical trials in human beings are carried out in three phases to seek specific answers.<br/>
+        <br/>
+        
+        Phase 1: is done in typically 20-100 healthy volunteers to see if the vaccine is safe, if it appears to work, whether there are any serious side effects, and if these are related to the size of the dose.<br/>
+        <br/> <br/>
+        Phase 2: uses several hundred volunteers to determine the most common short-term side effects, and how well the immune system responds to the vaccine — what is known as ‘immunogenicity’.<br/>
+        <br/> <br/>
+        Phase 3: involves thousands of volunteers in a blinded manner to compare those who get the vaccine to those who don’t (they get a placebo or dummy) to re-confirm safety, serious side-effects if any, and most importantly, whether the vaccine is efficacious in preventing infection and/or disease.<br/>
+        
+        
+        <br/> <br/> </div>
+        <div class="vaccination">
+    <b>
+        Did the Covid-19 vaccines get approval prematurely?</b><br/> <br/><br/><br/>
+        The pandemic has presented a unique opportunity to compress the vaccine development timeline without compromising on safety. Regulators have invoked Emergency Use Authorization (EUA), which is a mechanism to facilitate the availability of vaccines during public health emergencies. EUA does not compromise on safety, and includes a review of all phase 1 and phase 2 data and up to two months (for US FDA) or 70 days (for European Medicines Agency) of phase 3 follow-up, including an interim analysis for efficacy. It allows vaccines to be used in an emergency in groups that are at high risk of infection, morbidity, and mortality.
+        <br/>
+        In India, the approval to Bharat Biotech’s Covaxin in “clinical trial mode” did lead to some confusion. It was also described as a “backup” vaccine, which could have suggested to some that it was somehow inferior to the other vaccine. As we have already noted above, Covaxin is based on a time-tested technology, which most likely makes it very safe.
+        <br/>
+        EUA to drugs and vaccines are legitimate methods to deal with a medical emergency, but the way in which this issue was communicated in India left much to be desired.
+        <br/><br/><br/></div>
+        <div class="vaccination">
+      <b>  Will the vaccines work against variant viruses?</b> <br/><br/><br/><br/>
+        Though coronaviruses mutate slower than other RNA viruses, new variants have emerged independently in the UK, South Africa, and Brazil that have now spread to over 50 countries, including India. These viruses have key changes in the Spike protein, allowing them to better attach to and enter cells. They multiply and transmit more efficiently, estimated at 30% to 70% more efficiently for the UK variant.
+        <br/>
+        A key mutation called N501Y is found in the receptor-binding domain of the Spike protein, which is also the target of virus-neutralizing antibodies. While work is on in multiple laboratories to directly test this, some early data show that viruses with or without this mutation are neutralized equally well by the blood serum of recovered Covid-19 patients.
+        <br/>
+        Variant viruses don’t always come from foreign shores. They can also emerge within. Increased genomic surveillance of infected persons within the country will provide early warning of this. However, our sequencing density is very low, with only about 5,000 virus sequences available from over 10 million confirmed cases in India. This has to increase, especially now that vaccines are being deployed, which would put additional pressure on viruses to mutate.
+        <br/>
+        Any cases of vaccine failure — such as those who get the disease even after getting fully vaccinated — should be investigated for what viral variants they harbour, and if these can be neutralized by the sera of recovered patients and vaccinated persons.
+        <br/><br/><br/></div>
+        <div class="vaccination">
+        <b>
+            Should those already infected take the vaccine?</b> <br/><br/><br/><br/>
+        It is advisable to take the vaccine because we do not fully understand the duration of protection following a natural infection. Available data suggest that neutralizing antibodies wane off in 3 to 5 months, but other arms of the immune response are likely to protect longer. If vaccine supplies are limited, which is unlikely in India, people with prior infection may delay their vaccination by a few months.
+        
+        </P></div>
+    </div>
+    
+</section>
+<br/><br/>
+<h1 style="color:blue" align="center">FEEDBACK FORM ABOUT VACCINATION</h1>
+
+<div class="file">
+  <form id="" method="post" action="https://formspree.io/f/mrgrpwla">
+
+    <label for="name"> Name</label><br/>
+    <input type="text" id="name" name="name" placeholder="Your name.."><br/>
+
+    <label for="lname">Email</label><br/>
+    <input type="text" id="email" name="mail id" placeholder="Your Mail"><br/>
+
+    <label for="state">STATE</label><br/>
+    <select id="state" name="state">
+      <option value="Karnataka">Karnataka</option>
+      <option value="kerala">Kerala</option>
+      <option value="tamilnadu">Tamilnadu</option>
+    </select><br/>
+
+    <label for="description">Description</label><br/>
+    <textarea id="description" name="description" placeholder="Write something about your Vaccination.." style="height:150px"></textarea>
+    <br/>
+
+ <input type="submit" value="Submit">
+
+  </form>
+</div>
+<br/>
+<div class="footer">
+    <div class="footer-content">
+        <h2 id="CONTACT US"> CONTACT US </h2>
+           <h5> MAIL TO: quaranteamscit@gmail.com<br/>
+            PHONE: 9080558635 </h5>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; quaranteams| Designed by QUARANTEAMS
+        </div>
+    </div>
+</div>
+    </body>
+</html>

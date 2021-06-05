@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/p-441-ted-2440-teddy_1_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=aa7e60562d981c089855f1baf5bfd239);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+
+}
+.nav{
+    display: flex;
+    padding-left: 60px;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #e43b11 ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #0000CD;
+}
+
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero-btn:hover{
+    border: 1px solid #e43b11;
+    background: #e43b11;
+    transition: 1s;
+
+}
+.corona{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #0000CD;
+}
+p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.corona-col{
+    flex-basis: 31%;
+    background: #c3f8f8;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.corona-col:hover{
+    box-shadow: 0 0 20px 0px rgba(8, 2, 97, 0.918);
+}
+.vaccines{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px ;
+}
+.vaccines-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.vaccines-col img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+
+}
+.vaccination{
+    text-decoration: black;
+}
+.rows{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.vaccination{
+    flex-basis: 22%;
+    background: #c3f8f8;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.vaccination:hover{
+    box-shadow: 0 0 20px 0px rgba(21, 8, 204, 0.918);
+}
+input[type=text], select, textarea {
+    width: 70%;
+    padding: 12px; 
+    border: 1px solid #0000FF; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: -10px
+  cursor: pointer;
+  }
+  
+  
+  
+  input[type=submit]:hover {
+    background-color: #0000FF;
+  }
+  
+  .file {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    padding-left: 450px;
+    height: 500px
+  }
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 200px;
+    position: relative;
+}
+h2{
+    text-align: center;
+    color: #d3d3d3;
+}
+h5{
+    text-align: center;
+    color: aquamarine;
+    text-shadow: brown;
+    font-size: larger;
+}
+.footer .footer-content{
+    border: 1px solid red;
+    height: 150px;
+
+}
+.footer .footer-bottom{
+    background: #191a1b;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
